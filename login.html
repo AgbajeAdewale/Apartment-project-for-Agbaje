@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fa/css/all.css">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+      
+        
+        body {
+            background-image: url("images/foot.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            flex: 1;  
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 500px;
+            margin-top: 80px;
+            flex: 1; 
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 193, 7, 0.2);
+            color: #333;
+            margin-top: 30px;
+            font-size: 1.2rem;
+          }
+
+        .btn-primary {
+            background-color: #ffcc00;
+            border-color: #ffcc00;
+        }
+
+        .btn-primary:hover {
+            background-color: #eeb800;
+            border-color: #eeb800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-warning sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand teenh" href="index.html">
+                    APARTMENT NG <i class="fa-solid fa-house"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon nav-ham"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="login.html">LOGIN/SIGNUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="website.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hub" href="Aboutus.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOKINGS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="bookings.html">BOOKINGS</a></li>
+                                <li><a class="dropdown-item" href="Aboutus.html">ABOUT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="text-warning">LOGIN</h1>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" placeholder="Email Here" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">PASSWORD</label>
+                    <input type="password" class="form-control" placeholder="Password Here" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">LOGIN <i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
+
+            <p>Don't have an account? <a href="signup.html" class="text-warning">SIGN UP HERE</a></p>
+        </div>
+        <footer class="row bg-warning text-center py-4">
+          <div class="col-12">
+              <p class="mb-0">Unlock the door to your dream apartment. Your journey starts here!</p>
+              <p class="mb-0">At Apartment NG, you're not just a guest; you're family. Let's find your perfect place together!</p>
+              <p class="mb-0 text-dark fw-bold"> &copy; 2024 Apartment NG. All rights reserved.</p>
+          </div>
+      </footer>
+    </div>
+</body>
+</html>

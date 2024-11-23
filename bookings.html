@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1
+	  shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
+	<title>APARTMENT NG</title>
+	<style type="text/css">
+  
+  html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #2c3e50;
+        color: white;
+    }
+
+    .container {
+        background-color: rgba(30, 120, 100, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+        border: none;
+    }
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+    }
+
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #333;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    }
+
+
+    @media (max-width: 576px) {
+        .container {
+            margin: 0;
+            padding: 20px;
+        }
+    }
+
+	</style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-warning sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand teenh" href="index.html">
+                    APARTMENT NG <i class="fa-solid fa-house"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon nav-ham"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="login.html">LOGIN/SIGNUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="website.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hub" href="Aboutus.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOKINGS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="bookings.html">BOOKINGS</a></li>
+                                <li><a class="dropdown-item" href="Aboutus.html">ABOUT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hub" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+     <div class="container">
+        <h2>Apartment Booking Form <i class="fa-solid fa-house"></i></h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your@mail.com" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+234 812 *** ****" required>
+            </div>
+            <div class="mb-3">
+                <label for="apartmentType" class="form-label">Apartment Type</label>
+                <select class="form-select" id="apartmentType" required>
+                    <option value="" disabled selected>Select an apartment type</option>
+                    <option value="1-bedroom">1 Bedroom</option>
+                    <option value="2-bedroom">2 Bedroom</option>
+                    <option value="3-bedroom">3 Bedroom</option>
+                    <option value="4-bedroom">4 Bedroom</option>
+                    <option value="5-bedroom">5 Bedroom Terrance With BQ</option>
+                    <option value="3-bedroom">3 Bedroom Semi-Detached</option>
+                    <option value="4-bedroom">4 Bedroom Semi-Detached</option>
+                    <option value="2-bedroom">2 Bedroom Semi-Detached</option>
+                    <option value="5-bedroom">5 Bedroom fully-Detached</option>
+                    <option value="4-bedroom">4 Bedroom fully-Detached</option>
+                    <option value="3-bedroom">3 Bedroom fully-Detached</option>
+                    <option value="2-bedroom">2 Bedroom fully-Detached</option>
+                    <option value="2-bedroom">2 Bedroom penthouses</option>
+                    <option value="1-bedroom">1 Bedroom penthouses</option>
+                    <option value="3-bedroom">3 Bedroom penthouses</option>
+                    <option value="studio">Studio Apartment</option>
+                </select>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="checkIn" class="form-label">Check-In Date</label>
+                    <input type="date" class="form-control" id="checkIn" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="checkOut" class="form-label">Check-Out Date</label>
+                    <input type="date" class="form-control" id="checkOut" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="guests" class="form-label">Number of Guests</label>
+                <input type="number" class="form-control" id="guests" min="1" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="specialRequests" class="form-label">Special Requests</label>
+                <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requests or preferences?"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="terms" class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    I agree to the <a href="#">terms and conditions</a>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Book Now <i class="fa-solid fa-check"></i></button>
+        </form>
+    </div>
+
+         <footer class="row bg-warning text-center py-4">
+    <div class="col-12">
+        <p class="mb-0">Unlock the door to your dream apartment. Your journey starts here!</p>
+        <p class="mb-0">At Apartment NG, you're not just a guest; you're family. Let's find your perfect place together!</p>
+        <p class="mb-0 text-dark fw-bold"> &copy; 2024 Apartment NG. All rights reserved.</p>
+    </div>
+</footer>
+
+	</div>
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>
